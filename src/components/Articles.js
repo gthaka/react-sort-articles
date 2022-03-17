@@ -1,24 +1,33 @@
 import React from 'react';
-import Article from './Article';
 
 function Articles(articles) {
 
-    return (
-        <div className="card w-50 mx-auto">
-            <table>
-                <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Upvotes</th>
-                    <th>Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                  <Article articles={articles} />
-                </tbody>
-            </table>
-        </div>
-    );
+  return (
+    <div className="card w-50 mx-auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Upvotes</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {articles &&
+            articles.map(({ title, upvotes, date }, index) => (
+
+              <tr data-testid="article" key={index}>
+                <td data-testid="article-title">{title}</td>
+                <td data-testid="article-upvotes">{upvotes}</td>
+                <td data-testid="article-date">{date}</td>
+              </tr>
+            )
+            )
+          }
+        </tbody>
+      </table>
+    </div>
+  );
 
 }
 
