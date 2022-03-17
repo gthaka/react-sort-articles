@@ -33,7 +33,7 @@ function App({articles}) {
             <div className="layout-row align-items-center justify-content-center my-20 navigation">
                 <label className="form-hint mb-0 text-uppercase font-weight-light">Sort By</label>
                 <button data-testid="most-upvoted-link" className="small" onClick={()=>setSorted(true)}>Most Upvoted</button>
-                <button data-testid="most-recent-link" className="small" onClick={()=>setSorted(true)}>Most Recent</button>
+                <button data-testid="most-recent-link" className="small" onClick={()=>setSorted(false)}>Most Recent</button>
             </div>
             <Articles articles={articles} sorting={sorted}/>
         </div>
