@@ -1,6 +1,7 @@
 import React from 'react';
+import Article from './Article';
 
-function Articles() {
+function Articles(articles) {
 
     return (
         <div className="card w-50 mx-auto">
@@ -13,11 +14,7 @@ function Articles() {
                 </tr>
                 </thead>
                 <tbody>
-                <tr data-testid="article" key="article-index">
-                    <td data-testid="article-title">Article 1 title</td>
-                    <td data-testid="article-upvotes">Article 1 title</td>
-                    <td data-testid="article-date">Article 1 title</td>
-                </tr>
+                  <Article articles={articles} />
                 </tbody>
             </table>
         </div>
