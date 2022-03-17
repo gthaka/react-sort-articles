@@ -1,35 +1,23 @@
-<testsuites name="jest tests" tests="4" failures="4" time="2.014">
-  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2022-03-17T14:04:11" time="2.014" tests="4">
-    <testcase classname=" Initial articles render correctly" name=" Initial articles render correctly" time="0.046">
-      <failure>TypeError: articles.map is not a function
-    at Articles (/projects/challenge/src/components/Articles.js:17:22)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:14803:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:17482:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:18596:16)
-    at HTMLUnknownElement.callCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:188:14)
-    at invokeEventListeners (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
-    at HTMLUnknownElementImpl._dispatch (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
-    at HTMLUnknownElement.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
-    at Object.invokeGuardedCallbackDev (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:237:16)
-    at invokeGuardedCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:292:31)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
-    at performSyncWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
-    at scheduleUpdateOnFiber (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
-    at updateContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
-    at /projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24758:7
-    at unbatchedUpdates (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
-    at legacyRenderSubtreeIntoContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
-    at Object.render (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
-    at /projects/challenge/node_modules/@testing-library/react/dist/index.js:86:25
-    at batchedUpdates$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
-    at act (/projects/challenge/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/index.js:82:26)
-    at renderApp (/projects/challenge/src/App.test.js:73:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:94:45)
+<testsuites name="jest tests" tests="4" failures="3" time="2.015">
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2022-03-17T14:05:53" time="2.015" tests="4">
+    <testcase classname=" Initial articles render correctly" name=" Initial articles render correctly" time="0.064">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected
++ Received
+
+  Array [
+-   &quot;Artificial Mountains&quot;,
+-   &quot;200&quot;,
+-   &quot;2019-11-23&quot;,
++   &quot;Alphabet earnings&quot;,
++   &quot;22&quot;,
++   &quot;2011-11-23&quot;,
+  ]
+    at forEach (/projects/challenge/src/App.test.js:89:36)
+    at Array.forEach (&lt;anonymous&gt;)
+    at expectArticles (/projects/challenge/src/App.test.js:84:12)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:97:3)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
     at new Promise (&lt;anonymous&gt;)
@@ -38,36 +26,24 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname=" Clicking on top renders expected articles" name=" Clicking on top renders expected articles" time="0.005">
-      <failure>TypeError: articles.map is not a function
-    at Articles (/projects/challenge/src/components/Articles.js:17:22)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:14803:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:17482:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:18596:16)
-    at HTMLUnknownElement.callCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:188:14)
-    at invokeEventListeners (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
-    at HTMLUnknownElementImpl._dispatch (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
-    at HTMLUnknownElement.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
-    at Object.invokeGuardedCallbackDev (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:237:16)
-    at invokeGuardedCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:292:31)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
-    at performSyncWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
-    at scheduleUpdateOnFiber (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
-    at updateContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
-    at /projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24758:7
-    at unbatchedUpdates (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
-    at legacyRenderSubtreeIntoContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
-    at Object.render (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
-    at /projects/challenge/node_modules/@testing-library/react/dist/index.js:86:25
-    at batchedUpdates$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
-    at act (/projects/challenge/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/index.js:82:26)
-    at renderApp (/projects/challenge/src/App.test.js:73:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:101:45)
+    <testcase classname=" Clicking on top renders expected articles" name=" Clicking on top renders expected articles" time="0.021">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected
++ Received
+
+  Array [
+-   &quot;Artificial Mountains&quot;,
+-   &quot;200&quot;,
+-   &quot;2019-11-23&quot;,
++   &quot;Alphabet earnings&quot;,
++   &quot;22&quot;,
++   &quot;2011-11-23&quot;,
+  ]
+    at forEach (/projects/challenge/src/App.test.js:89:36)
+    at Array.forEach (&lt;anonymous&gt;)
+    at expectArticles (/projects/challenge/src/App.test.js:84:12)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:107:3)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
     at new Promise (&lt;anonymous&gt;)
@@ -76,74 +52,26 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname=" Clicking on newest renders expected articles" name=" Clicking on newest renders expected articles" time="0.003">
-      <failure>TypeError: articles.map is not a function
-    at Articles (/projects/challenge/src/components/Articles.js:17:22)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:14803:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:17482:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:18596:16)
-    at HTMLUnknownElement.callCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:188:14)
-    at invokeEventListeners (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
-    at HTMLUnknownElementImpl._dispatch (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
-    at HTMLUnknownElement.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
-    at Object.invokeGuardedCallbackDev (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:237:16)
-    at invokeGuardedCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:292:31)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
-    at performSyncWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
-    at scheduleUpdateOnFiber (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
-    at updateContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
-    at /projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24758:7
-    at unbatchedUpdates (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
-    at legacyRenderSubtreeIntoContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
-    at Object.render (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
-    at /projects/challenge/node_modules/@testing-library/react/dist/index.js:86:25
-    at batchedUpdates$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
-    at act (/projects/challenge/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/index.js:82:26)
-    at renderApp (/projects/challenge/src/App.test.js:73:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:111:45)
-    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
-    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    <testcase classname=" Clicking on newest renders expected articles" name=" Clicking on newest renders expected articles" time="0.022">
     </testcase>
-    <testcase classname=" Sequence of navigation clicks renders expected artices" name=" Sequence of navigation clicks renders expected artices" time="0.004">
-      <failure>TypeError: articles.map is not a function
-    at Articles (/projects/challenge/src/components/Articles.js:17:22)
-    at renderWithHooks (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:14803:18)
-    at mountIndeterminateComponent (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:17482:13)
-    at beginWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:18596:16)
-    at HTMLUnknownElement.callCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:188:14)
-    at invokeEventListeners (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)
-    at HTMLUnknownElementImpl._dispatch (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)
-    at HTMLUnknownElementImpl.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)
-    at HTMLUnknownElement.dispatchEvent (/projects/challenge/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)
-    at Object.invokeGuardedCallbackDev (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:237:16)
-    at invokeGuardedCallback (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:292:31)
-    at beginWork$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:23203:7)
-    at performUnitOfWork (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22157:12)
-    at workLoopSync (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:22130:22)
-    at performSyncWorkOnRoot (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21756:9)
-    at scheduleUpdateOnFiber (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21188:7)
-    at updateContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24373:3)
-    at /projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24758:7
-    at unbatchedUpdates (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21903:12)
-    at legacyRenderSubtreeIntoContainer (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24757:5)
-    at Object.render (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:24840:10)
-    at /projects/challenge/node_modules/@testing-library/react/dist/index.js:86:25
-    at batchedUpdates$1 (/projects/challenge/node_modules/react-dom/cjs/react-dom.development.js:21856:12)
-    at act (/projects/challenge/node_modules/react-dom/cjs/react-dom-test-utils.development.js:929:14)
-    at render (/projects/challenge/node_modules/@testing-library/react/dist/index.js:82:26)
-    at renderApp (/projects/challenge/src/App.test.js:73:25)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:122:45)
+    <testcase classname=" Sequence of navigation clicks renders expected artices" name=" Sequence of navigation clicks renders expected artices" time="0.026">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+- Expected
++ Received
+
+  Array [
+-   &quot;Artificial Mountains&quot;,
+-   &quot;200&quot;,
+-   &quot;2019-11-23&quot;,
++   &quot;Alphabet earnings&quot;,
++   &quot;22&quot;,
++   &quot;2011-11-23&quot;,
+  ]
+    at forEach (/projects/challenge/src/App.test.js:89:36)
+    at Array.forEach (&lt;anonymous&gt;)
+    at expectArticles (/projects/challenge/src/App.test.js:84:12)
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:132:5)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
     at new Promise (&lt;anonymous&gt;)

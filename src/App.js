@@ -17,15 +17,16 @@ function App({articles}) {
    
     const sortByRecent = () => {
       const theArticles = [...articles];
-      theArticles.sort((a,b)=> new Date(b.date) -  new Date(a.date));
+      theArticles.sort((a,b) => new Date(b.date) -  new Date(a.date));
       setSorted(theArticles);
     }
 
     const sortByVoted = () => {
       const theArticles = [...articles];
-      theArticles.sort((a,b)=>b.upvoted - a.upvoted);
+      theArticles.sort((a,b) => b.upvoted - a.upvoted);
       setSorted(theArticles);
     }
+    
     return (
         <div className="App">
             <h8k-navbar header={title}></h8k-navbar>
