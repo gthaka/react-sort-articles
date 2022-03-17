@@ -1,6 +1,23 @@
 import React from 'react';
 
-function Articles({articles}) {
+function Articles({ articles = [], sorting = true }) {
+  console.log(sorting ? "Upvote" : "Recent");
+
+    console.log(
+        articles.sort((a, b) =>
+            a[sorting ? "upvotes" : "date"] > b[sorting ? "upvotes" : "date"]
+                ? -1
+                : 1
+        )
+    );
+
+    let updatedArticles = articles.map((art, i) => (
+        <tr key={i}>
+            <th>{art.title}</th>
+            <th>{art.upvotes}</th>
+            <th>{art.date}</th>
+        </tr>
+    ));
 
   return (
     <div className="card w-50 mx-auto">
@@ -13,16 +30,7 @@ function Articles({articles}) {
           </tr>
         </thead>
         <tbody>
-          {articles &&
-            articles.map(({ title, upvotes, date }, index) => (
-              <tr data-testid="article" key={index}>
-                <td data-testid="article-title">{title}</td>
-                <td data-testid="article-upvotes">{upvotes}</td>
-                <td data-testid="article-date">{date}</td>
-              </tr>
-            )
-            )
-          }
+          {updatedArticles}
         </tbody>
       </table>
     </div>
