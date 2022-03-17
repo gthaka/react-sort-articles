@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './App.css';
 import 'h8k-components';
 
@@ -9,6 +9,11 @@ const title = "Sorting Articles";
 function App({articles}) {
 
     const [sorted,setSorted] = React.useState([]);
+
+    useEffect(() => {
+      sortByVoted();
+      // eslint-disable-next-line
+    },[]);
    
     const sortByRecent = () => {
       const theArticles = [...articles];
