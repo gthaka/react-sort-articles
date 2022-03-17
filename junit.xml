@@ -1,12 +1,22 @@
-<testsuites name="jest tests" tests="4" failures="4" time="1.994">
-  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2022-03-17T14:19:49" time="1.994" tests="4">
-    <testcase classname=" Initial articles render correctly" name=" Initial articles render correctly" time="0.06">
-      <failure>Error: expect(received).toHaveLength(expected)
+<testsuites name="jest tests" tests="4" failures="3" time="2.067">
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2022-03-17T14:21:31" time="2.067" tests="4">
+    <testcase classname=" Initial articles render correctly" name=" Initial articles render correctly" time="0.063">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
 
-Expected length: 7
-Received length: 0
-Received array:  []
-    at expectArticles (/projects/challenge/src/App.test.js:83:20)
+- Expected
++ Received
+
+  Array [
+-   &quot;Artificial Mountains&quot;,
+-   &quot;200&quot;,
+-   &quot;2019-11-23&quot;,
++   &quot;Alphabet earnings&quot;,
++   &quot;22&quot;,
++   &quot;2011-11-23&quot;,
+  ]
+    at forEach (/projects/challenge/src/App.test.js:89:36)
+    at Array.forEach (&lt;anonymous&gt;)
+    at expectArticles (/projects/challenge/src/App.test.js:84:12)
     at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:97:3)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
@@ -16,13 +26,23 @@ Received array:  []
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname=" Clicking on top renders expected articles" name=" Clicking on top renders expected articles" time="0.017">
-      <failure>Error: expect(received).toHaveLength(expected)
+    <testcase classname=" Clicking on top renders expected articles" name=" Clicking on top renders expected articles" time="0.019">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
 
-Expected length: 7
-Received length: 0
-Received array:  []
-    at expectArticles (/projects/challenge/src/App.test.js:83:20)
+- Expected
++ Received
+
+  Array [
+-   &quot;Artificial Mountains&quot;,
+-   &quot;200&quot;,
+-   &quot;2019-11-23&quot;,
++   &quot;Alphabet earnings&quot;,
++   &quot;22&quot;,
++   &quot;2011-11-23&quot;,
+  ]
+    at forEach (/projects/challenge/src/App.test.js:89:36)
+    at Array.forEach (&lt;anonymous&gt;)
+    at expectArticles (/projects/challenge/src/App.test.js:84:12)
     at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:107:3)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
@@ -32,29 +52,25 @@ Received array:  []
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname=" Clicking on newest renders expected articles" name=" Clicking on newest renders expected articles" time="0.019">
-      <failure>Error: expect(received).toHaveLength(expected)
-
-Expected length: 7
-Received length: 0
-Received array:  []
-    at expectArticles (/projects/challenge/src/App.test.js:83:20)
-    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:117:3)
-    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
-    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    <testcase classname=" Clicking on newest renders expected articles" name=" Clicking on newest renders expected articles" time="0.021">
     </testcase>
-    <testcase classname=" Sequence of navigation clicks renders expected artices" name=" Sequence of navigation clicks renders expected artices" time="0.012">
-      <failure>Error: expect(received).toHaveLength(expected)
+    <testcase classname=" Sequence of navigation clicks renders expected artices" name=" Sequence of navigation clicks renders expected artices" time="0.021">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
 
-Expected length: 7
-Received length: 0
-Received array:  []
-    at expectArticles (/projects/challenge/src/App.test.js:83:20)
+- Expected
++ Received
+
+  Array [
+-   &quot;Artificial Mountains&quot;,
+-   &quot;200&quot;,
+-   &quot;2019-11-23&quot;,
++   &quot;Alphabet earnings&quot;,
++   &quot;22&quot;,
++   &quot;2011-11-23&quot;,
+  ]
+    at forEach (/projects/challenge/src/App.test.js:89:36)
+    at Array.forEach (&lt;anonymous&gt;)
+    at expectArticles (/projects/challenge/src/App.test.js:84:12)
     at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:132:5)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
