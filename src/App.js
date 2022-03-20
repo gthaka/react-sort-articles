@@ -15,6 +15,11 @@ function App({ articles }) {
     // eslint-disable-next-line
   }, []);
 
+  let coalesce = (val, def) => {
+    if (val === null || typeof val === 'undefined') return def;
+    return val;
+  }
+
   const sortByRecent = () => {
     const theArticles = [...articles];
     theArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -23,7 +28,7 @@ function App({ articles }) {
 
   const sortByVoted = () => {
     const theArticles = [...articles];
-    theArticles.sort((a, b) => b.upvoted - a.upvoted);
+    theArticles.sort((a, b) => coalesce(b.upvotes, -Infinity) - coalesce(a.upvotes, -Infinity));
     setSorted(theArticles);
   }
 
