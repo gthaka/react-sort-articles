@@ -8,7 +8,7 @@
     "create-react-app": "^1.2.1",
     "h8k-components": "^1.0.0",
     "h8k-design": "^1.0.16",
-    "kill-port": "^1.6.1",
+    "kill-port": "^2.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^2.1.3",
