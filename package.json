@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "create-react-app": "^1.2.1",
     "h8k-components": "^1.0.0",
