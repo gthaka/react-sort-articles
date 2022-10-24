@@ -12,7 +12,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.14.0",
     "react-scripts": "^5.0.1",
-    "save": "^2.5.0"
+    "save": "^2.9.0"
   },
   "scripts": {
     "start": "cross-env HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
