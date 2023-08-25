@@ -21,7 +21,7 @@
     "prestart": "npm install"
   },
   "devDependencies": {
-    "chai": "^4.3.7",
+    "chai": "^4.3.8",
     "cross-env": "^7.0.3",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.7",
