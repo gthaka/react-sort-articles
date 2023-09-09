@@ -12,7 +12,6 @@ function App({ articles }) {
 
   useEffect(() => {
     sortByVoted();
-    // eslint-disable-next-line
   }, []);
 
   let coalesce = (val, def) => {
