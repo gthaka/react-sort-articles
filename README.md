@@ -1,4 +1,6 @@
-# React: Sorting Articles  
+# React: Sorting Articles
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/gthaka/react-sort-articles)
 
 Create a basic article sorting application, as shown below. Some core functionalities have already been implemented, but the application is not complete. Application requirements are given below, and the finished application must pass all of the unit tests.
 
@@ -29,26 +31,33 @@ The following data-testid attributes are required in the component for the tests
 - The number of upvotes of each article must be rendered in a `<td>` element that has the data-testid attribute "article-upvotes".
 - The publish date of each article must be rendered in a `<td>` element that has the data-testid attribute "article-date".
 
-## Environment 
+## Environment
 
 - React Version: 16.13.1
 - Default Port: 8000
 
-## Project Specifications 
+## Project Specifications
 
 **Read-Only Files**
+
 - `src/App.test.js`
 
 **Commands**
-- run: 
+
+- run:
+
 ```bash
 npm start
 ```
-- install: 
+
+- install:
+
 ```bash
 npm install
 ```
-- test: 
+
+- test:
+
 ```bash
 npm test
 ```
