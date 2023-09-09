@@ -13,15 +13,14 @@ function Articles({ articles }) {
           </tr>
         </thead>
         <tbody>
-          {articles &&
-            articles.map(({ title, upvotes, date }, index) => (
-              <tr data-testid="article" key={index}>
-                <td data-testid="article-title">{title}</td>
-                <td data-testid="article-upvotes">{upvotes}</td>
-                <td data-testid="article-date">{date}</td>
-              </tr>
-            )
-            )
+          {articles?.map(({ title, upvotes, date }) => (
+            <tr data-testid="article" key={title}>
+              <td data-testid="article-title">{title}</td>
+              <td data-testid="article-upvotes">{upvotes}</td>
+              <td data-testid="article-date">{date}</td>
+            </tr>
+          )
+          )
           }
         </tbody>
       </table>
