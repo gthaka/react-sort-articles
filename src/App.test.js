@@ -91,7 +91,7 @@ const expectArticles = (articles, expectedArticles) => {
 };
 
 test('Initial articles render correctly', () => {
-  const { getByTestId, queryAllByTestId } = renderApp();
+  const { queryAllByTestId } = renderApp();
 
   const articles = queryAllByTestId(testIds.article);
   expectArticles(articles, mostUpvotedArticles);
