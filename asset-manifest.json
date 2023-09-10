@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-sort-articles/static/css/main.1d78606b.css",
+    "main.js": "/react-sort-articles/static/js/main.64ff5683.js",
+    "stencil-polyfills-dom.js": "/react-sort-articles/static/js/stencil-polyfills-dom.4a0108e3.chunk.js",
+    "stencil-polyfills-core-js.js": "/react-sort-articles/static/js/stencil-polyfills-core-js.9b53c57e.chunk.js",
+    "stencil-polyfills-css-shim.js": "/react-sort-articles/static/js/stencil-polyfills-css-shim.251a0e54.chunk.js",
+    "stencil-h8k-logo_2-entry-js.js": "/react-sort-articles/static/js/stencil-h8k-logo_2-entry-js.f39586e6.chunk.js",
+    "index.html": "/react-sort-articles/index.html",
+    "main.1d78606b.css.map": "/react-sort-articles/static/css/main.1d78606b.css.map",
+    "main.64ff5683.js.map": "/react-sort-articles/static/js/main.64ff5683.js.map",
+    "stencil-polyfills-dom.4a0108e3.chunk.js.map": "/react-sort-articles/static/js/stencil-polyfills-dom.4a0108e3.chunk.js.map",
+    "stencil-polyfills-core-js.9b53c57e.chunk.js.map": "/react-sort-articles/static/js/stencil-polyfills-core-js.9b53c57e.chunk.js.map",
+    "stencil-polyfills-css-shim.251a0e54.chunk.js.map": "/react-sort-articles/static/js/stencil-polyfills-css-shim.251a0e54.chunk.js.map",
+    "stencil-h8k-logo_2-entry-js.f39586e6.chunk.js.map": "/react-sort-articles/static/js/stencil-h8k-logo_2-entry-js.f39586e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d78606b.css",
+    "static/js/main.64ff5683.js"
+  ]
+}
